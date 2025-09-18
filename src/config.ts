@@ -18,11 +18,11 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "Muonixy",
+	subtitle: "这是一个展示个人作品和想法的地方",
 
 	lang: SITE_LANG,
 
@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	translate: {
-		enable: true, // 启用翻译功能
+		enable: false, // 启用翻译功能
 		service: "client.edge", // 使用 Edge 浏览器翻译服务
 		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // 根据站点语言自动设置默认翻译语言
 		showSelectTag: false, // 不显示默认语言选择下拉菜单，使用自定义按钮
@@ -72,13 +72,13 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 3, // 轮播间隔时间（秒）
 		},
 
 		// PicFlow API支持(智能图片API)
 		imageApi: {
 			enable: false, // 启用图片API
-			url: "http://domain.com/api_v2.php?format=text&count=4", // API地址，返回每行一个图片链接的文本
+			url: "https://www.loliapi.com/acg/?id=23&type=url", // API地址，返回每行一个图片链接的文本
 		},
 		// 这里需要使用PicFlow API的Text返回类型,所以我们需要format=text参数
 		// 项目地址:https://github.com/matsuzaka-yuki/PicFlow-API
@@ -86,13 +86,13 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Beautiful Mizuki!", // 主页横幅主标题
+			title: "Muonixy's Blog!", // 主页横幅主标题
 
 			subtitle: [
-				"A Showcase Demo Site",
-				"Carousel Highlight: Innovation",
-				"Carousel Focus: User Experience",
-				"Carousel Spot: Core Advantages",
+				"这里是我用来记录思考",
+				"分享灵感和收藏生活瞬间的地方",
+				"愿文字作舟",
+				"与你一同在信息的海洋里寻找灯塔",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -175,32 +175,32 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "Links",
+			name: "链接",
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/muonixy",
 					external: true,
 					icon: "fa6-brands:github",
 				},
 				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					name: "QQ",
+					url: "tencent://message/?uin=3271390067&Site=&Menu=yes",
 					external: true,
-					icon: "fa6-brands:bilibili",
+					icon: "fa6-brands:qq",
 				},
 				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					name: "email",
+					url: "mailto:suxinnai@163.com",
 					external: true,
-					icon: "mdi:git",
+					icon: "mdi:email",
 				},
 			],
 		},
 		{
-			name: "My",
+			name: "我的内容",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
@@ -214,13 +214,13 @@ export const navBarConfig: NavBarConfig = {
 			],
 		},
 		{
-			name: "About",
+			name: "关于",
 			url: "/content/",
 			icon: "material-symbols:info",
 			children: [LinkPreset.About, LinkPreset.Friends],
 		},
 		{
-			name: "Others",
+			name: "其它",
 			url: "#",
 			icon: "material-symbols:more-horiz",
 			children: [
@@ -246,28 +246,28 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Mizuki",
+	name: "Suxinnai",
 	bio: "The world is big, you have to go and see",
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			name: "QQ",
+			icon: "fa6-brands:qq",
+			url: "tencent://message/?uin=3271390067&Site=&Menu=yes",
 		},
 		{
-			name: "Gitee",
-			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			name: "TikTok",
+			icon: "fa6-brands:tiktok",
+			url: "https://www.tiktok.com/@muonixy",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/muonixy",
 		},
 		{
-			name: "Discord",
-			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			name: "Twitter",
+			icon: "fa6-brands:twitter",
+			url: "https://twitter.com/muonixy",
 		},
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
@@ -291,16 +291,16 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
-		lang: "en", // 设置 Twikoo 评论系统语言为英文
+		lang: "zh-CN", // 设置 Twikoo 评论系统语言为中文
 	},
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "公告", // 公告标题
+	content: "欢迎来到我的博客！这里是一个示例公告。", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -436,7 +436,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -467,7 +467,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
+		welcome: "Welcome to muonixy's blog!", // 欢迎词
 		touch: [
 			"What are you doing?",
 			"Stop touching me!",
@@ -477,7 +477,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 		home: "Click here to go back to homepage!", // 首页提示
 		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
 		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
+		link: "https://github.com/muonixy", // 关于链接
 	},
 };
 

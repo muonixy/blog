@@ -23,213 +23,68 @@ export interface TimelineItem {
 	featured?: boolean;
 }
 
+// 时间线数据 - 已根据您的真实经历进行重写
 export const timelineData: TimelineItem[] = [
 	{
-		id: "current-study",
-		title: "Studying Computer Science and Technology",
+		id: "current-undergraduate-study",
+		title: "就读于重庆移通学院 (软件工程专业)",
 		description:
-			"Currently studying Computer Science and Technology, focusing on web development and software engineering.",
+			"专升本阶段，主攻软件工程专业方向，系统性学习Web全栈开发、数据库系统、软件开发流程与项目管理等核心课程。",
 		type: "education",
-		startDate: "2022-09-01",
-		location: "Beijing",
-		organization: "Beijing Institute of Technology",
-		skills: ["Java", "Python", "JavaScript", "HTML/CSS", "MySQL"],
+		startDate: "2024-09-01",
+		// endDate 为空，表示“至今”
+		location: "重庆",
+		organization: "重庆移通学院",
+		skills: ["Java", "Spring Boot", "Vue 3", "MySQL", "Git", "软件工程"],
 		achievements: [
-			"Current GPA: 3.6/4.0",
-			"Completed data structures and algorithms course project",
-			"Participated in multiple course project developments",
+			"当前状态：在读",
+			"正在进行“校园论坛系统”项目作为课程实践",
 		],
 		icon: "material-symbols:school",
 		color: "#059669",
 		featured: true,
 	},
 	{
-		id: "mizuki-blog-project",
-		title: "Mizuki Personal Blog Project",
+		id: "college-assistant-work",
+		title: "校学生处助理",
 		description:
-			"A personal blog website developed using the Astro framework as a practical project for learning frontend technologies.",
-		type: "project",
-		startDate: "2024-06-01",
-		endDate: "2024-08-01",
-		skills: ["Astro", "TypeScript", "Tailwind CSS", "Git"],
+			"在校学生处担任学生助理，主要负责日常文件整理、活动组织协调以及师生间的信息传达工作。",
+		type: "work", // 这段经历可以归类为“工作”经验
+		startDate: "2022-09-01", // 假设一个合理的任职时间
+		endDate: "2023-09-01",
+		location: "重庆",
+		organization: "重庆工程职业技术学院 - 学生处",
+		position: "学生助理",
+		skills: ["沟通协调能力", "文件管理", "办公软件 (Office)"],
 		achievements: [
-			"Mastered modern frontend development tech stack",
-			"Learned responsive design and user experience optimization",
-			"Completed the full process from design to deployment",
-		],
-		links: [
-			{
-				name: "GitHub Repository",
-				url: "https://github.com/example/mizuki-blog",
-				type: "project",
-			},
-			{
-				name: "Live Demo",
-				url: "https://mizuki-demo.example.com",
-				type: "website",
-			},
-		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
-		featured: true,
-	},
-	{
-		id: "summer-internship-2024",
-		title: "Frontend Development Intern",
-		description:
-			"Summer internship at an internet company, participating in frontend development of web applications.",
-		type: "work",
-		startDate: "2024-07-01",
-		endDate: "2024-08-31",
-		location: "Beijing",
-		organization: "TechStart Internet Company",
-		position: "Frontend Development Intern",
-		skills: ["React", "JavaScript", "CSS3", "Git", "Figma"],
-		achievements: [
-			"Completed user interface component development",
-			"Learned team collaboration and code standards",
-			"Received outstanding internship performance certificate",
+			"因工作认真负责，荣获“优秀助理”荣誉称号",
+			"有效提升了个人组织能力和执行力",
 		],
 		icon: "material-symbols:work",
 		color: "#DC2626",
 		featured: true,
 	},
 	{
-		id: "web-development-course",
-		title: "Completed Web Development Online Course",
+		id: "college-graduation",
+		title: "就读于重庆工程职业技术学院 (电子信息工程技术专业)",
 		description:
-			"Completed a full-stack web development online course, systematically learning frontend and backend development technologies.",
-		type: "achievement",
-		startDate: "2024-01-15",
-		endDate: "2024-05-30",
-		organization: "Mooc Website",
-		skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express"],
-		achievements: [
-			"Received course completion certificate",
-			"Completed 5 practical projects",
-			"Mastered full-stack development fundamentals",
-		],
-		links: [
-			{
-				name: "Course Certificate",
-				url: "https://certificates.example.com/web-dev",
-				type: "certificate",
-			},
-		],
-		icon: "material-symbols:verified",
-		color: "#059669",
-	},
-	{
-		id: "student-management-system",
-		title: "Student Management System Course Project",
-		description:
-			"Final project for the database course, developed a complete student information management system.",
-		type: "project",
-		startDate: "2023-11-01",
-		endDate: "2023-12-15",
-		skills: ["Java", "MySQL", "Swing", "JDBC"],
-		achievements: [
-			"Received excellent course project grade",
-			"Implemented complete CRUD functionality",
-			"Learned database design and optimization",
-		],
-		icon: "material-symbols:database",
-		color: "#EA580C",
-	},
-	{
-		id: "programming-contest",
-		title: "University Programming Contest",
-		description:
-			"Participated in a programming contest held by the university, improving algorithm and programming skills.",
-		type: "achievement",
-		startDate: "2023-10-20",
-		location: "Beijing Institute of Technology",
-		organization: "School of Computer Science",
-		skills: ["C++", "Algorithms", "Data Structures"],
-		achievements: [
-			"Won third prize in university contest",
-			"Improved algorithmic thinking ability",
-			"Strengthened programming fundamentals",
-		],
-		icon: "material-symbols:emoji-events",
-		color: "#7C3AED",
-	},
-	{
-		id: "part-time-tutor",
-		title: "Part-time Programming Tutor",
-		description:
-			"Provided programming tutoring for high school students, helping them learn Python basics.",
-		type: "work",
-		startDate: "2023-09-01",
-		endDate: "2024-01-31",
-		position: "Programming Tutor",
-		skills: ["Python", "Teaching", "Communication"],
-		achievements: [
-			"Helped 3 students master Python basics",
-			"Improved expression and communication skills",
-			"Gained teaching experience",
-		],
-		icon: "material-symbols:school",
-		color: "#059669",
-	},
-	{
-		id: "high-school-graduation",
-		title: "High School Graduation",
-		description:
-			"Graduated from high school with excellent grades and was admitted to the Computer Science and Technology program at Beijing Institute of Technology.",
+			"完成了电子信息工程技术专业的专科学习，掌握了电路分析、单片机原理及基础编程知识，为后续深入学习软件工程打下了坚实的硬件和底层基础。",
 		type: "education",
-		startDate: "2019-09-01",
-		endDate: "2022-06-30",
-		location: "Jinan, Shandong",
-		organization: "No.1 High School of Jinan",
+		startDate: "2021-09-01",
+		endDate: "2024-06-30",
+		location: "重庆",
+		organization: "重庆工程职业技术学院",
 		achievements: [
-			"College entrance exam score: 620",
-			"Received municipal model student award",
-			"Won provincial second prize in math competition",
+			"顺利完成所有专业课程并毕业",
+			"在校期间担任学生处助理并获得荣誉",
 		],
 		icon: "material-symbols:school",
 		color: "#2563EB",
 	},
-	{
-		id: "first-programming-experience",
-		title: "First Programming Experience",
-		description:
-			"First encountered programming in high school IT class, started learning Python basic syntax.",
-		type: "education",
-		startDate: "2021-03-01",
-		skills: ["Python", "Basic Programming Concepts"],
-		achievements: [
-			'Completed first "Hello World" program',
-			"Learned basic loops and conditional statements",
-			"Developed interest in programming",
-		],
-		icon: "material-symbols:code",
-		color: "#7C3AED",
-	},
-	{
-		id: "english-certificate",
-		title: "English CET-4 Certificate",
-		description:
-			"Passed the College English Test Band 4, acquired basic English reading and writing skills.",
-		type: "achievement",
-		startDate: "2023-06-15",
-		organization: "National College English Test Committee",
-		achievements: [
-			"CET-4 score: 550",
-			"Improved English technical documentation reading ability",
-			"Laid foundation for future study of foreign technical materials",
-		],
-		links: [
-			{
-				name: "CET-4 Certificate",
-				url: "https://certificates.example.com/cet4",
-				type: "certificate",
-			},
-		],
-		icon: "material-symbols:translate",
-		color: "#059669",
-	},
 ];
+
+// --- 下面的功能函数都不需要修改 ---
+// --- 它们会自动根据上面的 timelineData 数组工作 ---
 
 // Get timeline statistics
 export const getTimelineStats = () => {

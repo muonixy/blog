@@ -1,24 +1,84 @@
 {
 	"mode": "external",
-	"hidden": true,
+	"hidden": false,
 	"title": "外链相册示例",
 	"description": "这是一个使用外链图片的相册示例，所有图片都来自外部链接",
-	"date": "2025-08-28",
+	"date": "2025-09-18",
 	"location": "网络",
-	"tags": ["外链", "示例", "测试"],
+	"tags": ["二次元", "动漫"],
 	"layout": "masonry",
 	"columns": 3,
-	"cover": "https://picsum.photos/800/600?random=1",
+	"cover": "https://cdn.jsdelivr.net/gh/muonixy/image/img/lv_0_20250917114820.jpg",
 	"photos": [
 		{
 			"id": "external-1",
-			"src": "https://picsum.photos/800/600?random=2",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/IMG_20240212_091353.jpg",
 			"alt": "随机图片 1",
-			"title": "美丽的风景",
-			"description": "这是一张来自外链的美丽风景图片",
-			"tags": ["风景", "自然"],
-			"width": 800,
-			"height": 600
+			"title": "二次元图片",
+			"description": "这是二次元人物图片",
+			"tags": ["二次元", "动漫"],
+			"width": 1920,
+			"height": 1080
+		}
+		,{
+			"id": "external-2",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/1727254294967.png",
+			"alt": "随机图片 2",
+			"title": "动漫风景",
+			"description": "这是动漫风格的风景图片",
+			"tags": ["二次元", "风景"],
+			"width": 1920,
+			"height": 1080
+		}
+		,{
+			"id": "external-3",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/1727163504346.png",
+			"alt": "随机图片 3",
+			"title": "可爱角色",
+			"description": "这是一个可爱的二次元角色图片",
+			"tags": ["二次元", "可爱"],
+			"width": 1920,
+			"height": 1080
+		}
+		,{
+			"id": "external-4",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/1717778552051.jpeg",
+			"alt": "随机图片 4",
+			"title": "可爱角色",
+			"description": "这是一个可爱的二次元角色图片",
+			"tags": ["二次元", "可爱"],
+			"width": 1920,
+			"height": 1080
+		}
+		,{
+			"id": "external-5",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/1727146985781.png",
+			"alt": "随机图片 5",
+			"title": "可爱角色",
+			"description": "这是一个可爱的二次元角色图片",
+			"tags": ["二次元", "可爱"],
+			"width": 1920,
+			"height": 1080
+		}
+		,{
+			"id": "external-6",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/61b89d4f3fe22115a68d906ecf4b0fb0.jpeg",
+			"alt": "随机图片 6",
+			"title": "可爱角色",
+			"description": "这是一个可爱的二次元角色图片",
+			"tags": ["二次元", "可爱"],
+			"width": 1080,
+			"height": 1920
+		}
+		,{
+			"id": "external-7",
+			"src": "https://cdn.jsdelivr.net/gh/muonixy/image/img/IMG_20240131_193334_585.jpg",
+			"alt": "随机图片 7",
+			"title": "可爱角色",
+			"description": "这是一个可爱的二次元角色图片",
+			"tags": ["二次元", "可爱"],
+			"width": 1920,
+			"height": 1080
 		}
 	]
 }
